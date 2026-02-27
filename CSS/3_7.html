@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.7</title>
+    <style>
+        .cha{
+            display: flex;
+            gap: 20px;
+        }
+        .sp{
+            width: 30%;
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        .sp img{
+            width: 100%;
+        }
+        .image-box{
+            position: relative;
+        }
+
+        .info{
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: white;
+            padding: 5px;
+            display: none;
+        }
+        .image-box:hover .info{
+            display: block;
+        }
+        @media (max-width: 768px){
+        .cha{
+                flex-direction: column;
+            }
+
+        .sp{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cha">
+        <div class="sp">
+            <div class="image-box">
+                <img src="Anh3.png">
+                <div class="info">iĐiện Thoại iPhone 6 32GB VN/A (Vàng Đồng) - Hàng Chính Hãng</div>
+            </div>
+            <p><span style=color:gray>Điện Thoại iPhone 6 32GB VN/A (Vàng Đồng) - Hàng Chính Hãng</span></p>
+            <p>6.199.000 <u>đ</u><span style=color:gray> <span style="text-decoration: line-through;">8.990.000 đ</span><span style=color:red > -31%</span> </span></p>
+            
+        </div>
+        <div class="sp">
+            <div class="image-box">
+                <img src="Anh4.png">
+                <div class="info">Điện Thoại Samsung Galaxy J2 Pro 2018 - Hàng Chính Hãng</div>
+            </div>
+            <p><span style=color:gray>Điện Thoại Samsung Galaxy J2 Pro 2018 - Hàng Chính Hãng</span></p>
+            <p>2.360.000 <u>đ</u><span style=color:gray> <span style="text-decoration: line-through;">3.290.000 đ</span><span style=color:red > -28%</span> </span></p>
+            
+        </div>
+        <div class="sp">
+            <div class="image-box">
+                <img src="Anh5.png">
+                <div class="info">Điện Thoại Xaomi Mi Mĩ 2 (Black) - Hàng Chính Hãng</div>
+            </div>
+            <p><span style=color:gray>Điện Thoại Xaomi Mi Mĩ 2 (Black) - Hàng Chính Hãng</span></p>
+            <p>7.290.000 <u>đ</u><span style=color:gray> <span style="text-decoration: line-through;">12.990.000 đ</span><span style=color:red > -44%</span> </span></p>
+            
+        </div>
+        
+    </div>
+  
+</body>
+</html>
