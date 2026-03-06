@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div {
+            padding: 20px;
+            text-align: center;
+            color: black;
+            font-family: Arial;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap; 
+        }
+        .header  { width: 100%; background: #ff6b6b; }
+        .main    { width: 100%; background: #00bfff; }
+        .aside-1 { width: 100%; background: #ffd700; }
+        .aside-2 { width: 100%; background: #ff69b4; }
+        .footer  { width: 100%; background: #90ee90; }
+
+        @media (min-width: 768px) {
+            .aside-1 { width: 50%; }
+            .aside-2 { width: 50%; }
+        }
+
+
+        @media (min-width: 1024px) {
+            .aside-1 { width: 20%; order: 1; } 
+            .main    { width: 60%; order: 2; }
+            .aside-2 { width: 20%; order: 3; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="main">Main Content</div>
+        <div class="aside-1">Aside 1</div>
+        <div class="aside-2">Aside 2</div>
+        <div class="footer">Footer</div>
+    </div>
+
+</body>
+</html>
