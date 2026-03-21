@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="font-family: Arial; padding: 20px;">
+
+    <div>
+        a: <input id="a" type="number" onkeydown="if(event.key==='Enter') tinh()">
+        b: <input id="b" type="number"onkeydown="if(event.key==='Enter') tinh()">
+        Phép tính: <input id="pt" type="text" placeholder="+ - * /" 
+            onkeydown="if(event.key==='Enter') tinh()">
+    </div>
+
+    <div style="margin-top: 20px;">
+        <b>Kết quả:</b> <span id="kq" style="border-bottom: 1px solid; min-width: 100px; display: inline-block;"></span>
+    </div>
+
+    <script>
+        function tinh() {
+            let a = document.getElementById('a').value;
+            let b = document.getElementById('b').value;
+            let pt = document.getElementById('pt').value;
+            let hienThi = document.getElementById('kq');
+
+            if (pt === '/' && b == '0') {
+                hienThi.innerText = "Không thể chia cho 0!";
+                return;
+            }
+
+            try {
+                hienThi.innerText = eval(a + pt + b);
+            } catch (e) {
+                hienThi.innerText = "Lỗi phép tính!";
+            }
+        }
+    </script>
+
+</body>
+</html>
